@@ -51,7 +51,8 @@ $setting = $GLOBALS['VOIDSetting'];
     <!--CSS-->
     <link rel="stylesheet" href="<?php Utils::indexTheme('/assets/bundle.css');?>">
     <link rel="stylesheet" href="<?php Utils::indexTheme('/assets/VOID.css');?>">
-    
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1017338_gpdtqzzvklu.css">
+
     <script>
     VOIDConfig = {
         PJAX : <?php echo $setting['pjax'] ? 'true' : 'false'; ?>,

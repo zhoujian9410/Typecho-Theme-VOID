@@ -276,6 +276,66 @@ body{
     }
 }
 
+.visual-setting{
+    position: relative;
+    transition: 0.3s ease all;
+    #vs-panel{
+        display: none;
+    }
+    &.ds{
+        position: fixed;
+        z-index: 99;
+        left: 1.5rem;
+        bottom: 1.5rem;
+        border-radius: 50%;
+        background: black;
+        box-shadow: 5px 0 20px 5px rgba(0,0,0,.1);
+        #vs-icon{
+            i{
+                color: #ddd;
+                font-size: 24px;
+                display: block;
+            }
+            cursor: pointer;
+            display: flex;
+            padding: 14px;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease all;
+        }
+        #vs-close{
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            border-radius: 50%;
+            background: black;
+            transition: 0.3s ease all;
+            right: -13.5px;
+            top: -13.5px;
+            i{
+                color: #ddd;
+                font-size: 18px;
+                display: block;
+                padding: 9px;
+            }
+
+
+        }
+    }
+    &.open{
+        transition: 0.3s ease all;
+        width: 300px;
+        height: 100px;
+        border-radius: 10px;
+        #vs-close{
+            display: block;
+        }
+        #vs-icon{
+            display: none;
+        }
+    }
+}
+
 .hidden-xs{
     @media screen and (max-width: 767px){
         display: none!important

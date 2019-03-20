@@ -94,5 +94,10 @@ $setting = $GLOBALS['VOIDSetting'];
             </div>
         </footer>
         <div id="back-top" onclick="goTop(500);"><div></div></div>
+        <div class="visual-setting ds">
+            <div id="vs-icon" onclick="$(this).parent().addClass('open')"><i class="iconfont icon-setting"></i></div>
+            <div id="vs-panel">目前这里还在开发</div>
+            <div id="vs-close" onclick="$(this).parent().removeClass('open')"><i class="iconfont icon-guanbi"></i></div>
+        </div>
     </body>
 </html>
